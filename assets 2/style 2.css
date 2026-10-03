@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #26384d;
+    background-color: white;
+}
+a {
+    text-decoration: none;
+}
+/* HEADER */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    padding: 0 45px 0 90px;
+    background-color: transparent;
+}
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    width: 48%;
+    color: white;
+}
+.logo img {
+    width: 48px;
+    height: 40px;
+    object-fit: contain;
+    margin-right: 9px;
+}
+.logo div {
+    display: flex;
+    flex-direction: column;
+}
+.logo span {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    color: white;
+}
+.logo small {
+    margin-top: 2px;
+    font-size: 6px;
+    letter-spacing: 1px;
+    color: white;
+}
+/* NAVIGATION */
+.header nav {
+    margin-left: auto;
+}
+.header nav ul {
+    display: flex;
+    list-style: none;
+}
+.header nav ul li a {
+    position: relative;
+    display: block;
+    padding: 25px 13px;
+    color: #e89561;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.header nav ul li a:hover {
+    color: white;
+}
+/* MENU AKTIF */
+.header nav ul li a.active::after {
+    content: "";
+    position: absolute;
+    left: 13px;
+    right: 13px;
+    bottom: 7px;
+    height: 2px;
+    background-color: white;
+}
+/* RESERVE TABLE */
+.reserve-btn {
+    width: 135px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    background-color: #b39a84;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+/* BANNER */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 460px;
+    overflow: hidden;
+}
+.banner-image {
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(
+            rgba(18, 36, 52, 0.30),
+            rgba(18, 36, 52, 0.05)
+        ),
+        url("https://bluemountainscafe.com/wp-content/uploads/2025/12/Bluemountains-Cafe-Kintamani-3-scaled.webp");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* PAGE TITLE */
+.page-title {
+    padding: 70px 20px 55px;
+    text-align: center;
+    background-color: white;
+}
+.page-title p {
+    margin-bottom: 8px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    font-style: italic;
+    color: #26384d;
+}
+.page-title h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 52px;
+    font-weight: 400;
+    color: #26384d;
+}
+.title-line {
+    width: 55px;
+    height: 2px;
+    margin: 30px auto 0;
+    background-color: #8a4c1c;
+}
+/* SPECIAL OFFERS */
+.offers {
+    width: 100%;
+    padding: 0 9.8% 90px;
+}
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 65px;
+}
+/* OFFER */
+.offer-item {
+    width: 100%;
+}
+.offer-image {
+    width: 100%;
+    overflow: hidden;
+}
+.offer-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* OFFER CONTENT */
+.offer-content {
+    padding: 38px 20px 0;
+}
+.offer-content h2 {
+    margin-bottom: 18px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #26384d;
+}
+.offer-content p {
+    margin-bottom: 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    font-style: italic;
+    line-height: 1.45;
+    color: #526070;
+}
+.offer-content .price {
+    margin-bottom: 32px;
+    font-style: normal;
+    font-size: 16px;
+    color: #26384d;
+}
+/* GARIS */
+.offer-content .line {
+    width: 55px;
+    height: 2px;
+    margin-bottom: 20px;
+    background-color: #8a4c1c;
+}
+/* BOOK NOW */
+.book-btn {
+    width: 138px;
+    display: inline-block;
+    padding: 13px 15px;
+    background-color: #7e420d;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+.book-btn:hover {
+    background-color: #5d3008;
+}
+/* FOLLOW US */
+.follow {
+    padding: 70px 20px;
+    text-align: center;
+    background-color: #f7f5f1;
+}
+.follow p {
+    margin-bottom: 10px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    font-style: italic;
+}
+.follow h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 26px;
+    font-weight: 400;
+}
+/* FOOTER */
+footer {
+    background-color: #263b50;
+    color: white;
+}
+.footer-container {
+    width: 80%;
+    margin: auto;
+    padding: 55px 0 35px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+.footer-column {
+    text-align: center;
+}
+.footer-column h3 {
+    margin-bottom: 15px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    font-weight: 400;
+}
+.footer-column p {
+    margin-bottom: 6px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #d8dee3;
+}
+.copyright {
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.7;
+    color: #d1d7dc;
+}
+/* WHATSAPP */
+.whatsapp {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 65px;
+    height: 65px;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #25d366;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+}
+.whatsapp img {
+    width: 38px;
+    height: 38px;
+    display: block;
+}
+/* TABLET */
+@media (max-width: 1200px) {
+    .header {
+        padding: 0 25px;
+    }
+    .logo {
+        width: 40%;
+    }
+    .header nav ul li a {
+        padding-left: 9px;
+        padding-right: 9px;
+        font-size: 12px;
+    }
+    .reserve-btn {
+        width: 130px;
+        height: 45px;
+        font-size: 11px;
+    }
+}
+/* MOBILE */
+@media (max-width: 750px) {
+    .header {
+        position: absolute;
+        height: auto;
+        padding: 15px 20px;
+        flex-wrap: wrap;
+        background-color: transparent;
+    }
+    .logo {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .logo img {
+        width: 50px;
+        height: 40px;
+    }
+    .logo span {
+        font-size: 15px;
+    }
+    .logo small {
+        font-size: 6px;
+    }
+    .header nav {
+        margin-left: 0;
+    }
+    .header nav ul {
+        flex-wrap: wrap;
+    }
+    .header nav ul li a {
+        padding: 8px 7px;
+        font-size: 10px;
+    }
+    .header nav ul li a.active::after {
+        left: 7px;
+        right: 7px;
+        bottom: 2px;
+    }
+    .reserve-btn {
+        display: none;
+    }
+    .banner {
+        height: 400px;
+    }
+    .page-title {
+        padding: 50px 15px 40px;
+    }
+    .page-title h1 {
+        font-size: 40px;
+    }
+    .offers-grid {
+        grid-template-columns: 1fr;
+    }
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* SMALL PHONE */
+@media (max-width: 500px) {
+    .banner {
+        height: 350px;
+    }
+    .page-title h1 {
+        font-size: 34px;
+    }
+    .offers {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .offer-content {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .offer-content h2 {
+        font-size: 25px;
+    }
+    .offer-content p {
+        font-size: 15px;
+    }
+    .whatsapp {
+        width: 55px;
+        height: 55px;
+        right: 18px;
+        bottom: 18px;
+    }
+    .whatsapp img {
+        width: 32px;
+        height: 32px;
+    }
+}
